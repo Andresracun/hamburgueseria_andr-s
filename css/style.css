@@ -298,6 +298,14 @@ footer a{
     footer {
         text-align: left;
     }
+    #ourservices .grid {
+        grid-template-columns: repeat(3, 1fr);
+       
+    }
+    #ourservices .grid article:last-child{
+        grid-column: 3/4;
+    }
+    
 }
 
 @media (width>= 62.75rem /*serían 1004px*/){
