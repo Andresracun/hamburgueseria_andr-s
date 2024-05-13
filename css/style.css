@@ -97,6 +97,79 @@ header .menu a.active{
 
 /*Fin del header*/
 
+/* Inicio sección Ouservices*/
+ main {
+    margin-bottom: 100px;
+ }
+ main section {
+    padding: 4rem 0;
+ }
+
+ main section h2{
+    font-family: var(--fuentetitulos);
+    font-size: 2rem;
+    text-align: center;
+    & span {
+        color: var(--colorprincipal);
+    }
+ }
+
+ main section .underline {
+    position: relative;
+    width: 6.25rem;
+    margin: 0 auto;
+    color: var(--colorprincipal);
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 1.25rem;
+    & hr{
+        position: absolute;
+        width: 100%;
+        border-color: var(--colorprincipal);
+        top: -0.125rem;
+    }
+ }
+
+ #ourservices .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--margingrid)
+ }
+
+ #ourservices article {
+    padding: 1.25rem 0;
+    border-bottom: 0.0625rem solid #aaa;
+    & i{
+        color: var(--colorprincipal);
+    }
+    &>div i {
+        font-size: 150%;
+        border: 1px solid var(--colorprincipal);
+        padding: 0.8rem;
+    }
+    & h3 {
+        margin: var(--margingrid);
+        font-weight: 700;
+        font-size: 1.15rem;
+    }
+    & p {
+        color: #666;
+        line-height: 1.3;
+        margin-bottom: var(--margingrid);
+        font-size: 95%;
+    }
+    
+ }
+ .enlace {
+    color: var(--colorprincipal);
+    text-decoration: none;
+    font-weight: 700;
+ }
+
+
+
+/* Final sección Ourservices*/
+
 /*Inicio footer*/
 
 footer {
@@ -192,6 +265,24 @@ footer a{
 
 
 /* Inicio de media queries*/
+@media(width >= 37.5rem){
+    #ourservices .grid {
+         grid-template-columns: repeat(2, 1fr);
+        
+     }
+     #ourservices .grid article:last-child{
+        grid-column: 1/3;
+     }
+     #ourservices article {
+        padding: 1.25rem;
+        border-bottom: 0;
+        border-left: 1px solid #aaa;
+     }
+}
+
+
+
+
 @media (min-width: 48rem){
     header .nav-top .container{
         justify-content: space-between;
