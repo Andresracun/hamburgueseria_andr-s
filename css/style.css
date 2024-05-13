@@ -53,7 +53,62 @@ header .nav-top .container {
     }
 }
 
+header nav .container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: top 1.25rem; ;
 
+}
+header nav figure a {
+    display: block;
+    max-width: 6.25rem;
+}
 
+header nav figure {
+    width: calc(100% - 11.875rem);
+}
+
+header nav .hamburguesa div{
+    border-top: 0.125rem solid #aaa;
+    margin-bottom: 0.625rem;
+}
+header .hamburguesa{width: 1.875rem; cursor: pointer;}
+
+header .menu{
+    width: 100%;
+}
+
+header .menu a{
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    padding: 1.25rem;
+    text-align: center;
+    border-bottom: 1px solid #aaa;
+    color: #aaa;
+}
 
 /*Fin del header*/
+
+
+/* Inicio de media queries*/
+@media (min-width: 768px){
+    header .nav-top .container{
+        justify-content: space-between;
+        & span {
+            display: inline;
+        }
+        & a {
+            color: white;
+            text-decoration: none;
+            font-size: 110%;
+        }
+    }
+}
+
+
+
+
+
+
+/*Fin de media queries*/
