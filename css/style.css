@@ -28,6 +28,7 @@ img{
 .container {
     max-width: var(--anchomaximo);
     margin: 0 auto;
+    padding: 0 0.625rem;
 }
 body {
     font-family: var(fuenteprincipal);
@@ -35,4 +36,24 @@ body {
 }
 /*Fin del layout general*/
 
-/**/
+/*Inicio del Header*/
+header .nav-top {
+    background-color: var(--colorsecundario);
+    padding: 1.25rem 0rem;
+}
+
+header .nav-top .container {
+    display: flex;
+    justify-content: space-around;
+    & span{
+        display: none;}
+    & i {
+        font-size: 140%;
+        color: var(--colorprincipal);
+    }
+}
+
+
+
+
+/*Fin del header*/
