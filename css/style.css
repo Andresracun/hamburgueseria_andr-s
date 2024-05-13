@@ -262,10 +262,45 @@ footer a{
 
 
 /*Fin del hero*/
+/* Inicio sección about us*/
+#aboutus .flex{
+    display: flex;
+    flex-direction: column;
+    gap: var(--margingrid);
+}
+#aboutus h3{
+    font-weight: 700;
+    font-size: 1.15rem;
+}
+#aboutus h4{
+    color: var(--colorprincipal);
+    font-size: 1.07rem;
+    margin: var(--margingrid);
+}
+#aboutus p{
+    color: #777;
+    line-height: 1.3;
+}
+#aboutus .marco{
+    border: 3px solid var(--colorprincipal);
+    transform: rotateZ(10deg);
+    width: 90%;
+    margin: 0 auto;
+    transition: 1s;
+    & img {
+        transform: rotateZ(-10deg);
+        transition: 1s;
+    }
+}
+#aboutus figure:hover :is(.marco, img){
+    transform: rotateZ(0deg);
+}
 
 
+/*Fin sección about us*/
 /* Inicio de media queries*/
 @media(width >= 37.5rem){
+
     #ourservices .grid {
          grid-template-columns: repeat(2, 1fr);
         
@@ -278,9 +313,10 @@ footer a{
         border-bottom: 0;
         border-left: 1px solid #aaa;
      }
-}
-
-
+     #aboutus .flex{
+        flex-direction: row;
+        }
+    }
 
 
 @media (min-width: 48rem){
